@@ -1,0 +1,16 @@
+{
+    "name": "CS50 Dev Environment",
+    "image": "ghcr.io/cs50/codespace:latest",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/work/cs50,type=bind"
+    ],
+    "postCreateCommand": "bash",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.c_vscode_extension",
+                "cs50.cs50-vscode-extension"
+            ]
+        }
+    }
+}

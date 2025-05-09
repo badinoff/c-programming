@@ -1,0 +1,11 @@
+{
+    "name": "CS50 Codespace",
+    "image": "ghcr.io/cs50/codespace:latest",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/work,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/work",
+    "extensions": [
+        "ms-vscode.cpptools"
+    ]
+}

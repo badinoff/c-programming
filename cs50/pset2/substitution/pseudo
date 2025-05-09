@@ -1,0 +1,24 @@
+
+ZXCVBNMASDFGHJKLQWERTYUIOP
+
+I. main function should expect an argument which will be the cipher key - 26 alhpa characters of either case. main(argc, string argv[])
+
+II. first the program should ensure there are only two arguments passed - program name and the cipher key - if (argc != 2)
+    a. if two arguments are passed - continue executing next steps
+    b. if any other number of arguments passed - print a usage message
+    c. strlen to make sure the key is 26 characters long.
+
+III.next the program should validate the key to ensure that it is
+    a. characters do not repeat ?
+    b. all characters are alpha (no numbers) (if !isdigit(argv[1][i]) {printf("usage message" return 1)})
+
+i am guessing that I would need to convert string to chr to be able to iterate through each character and put characters into an array so that i can use each to manipulate the plain text
+
+to do this i might need to employ one or several if statements (?) and a loop to iterate through each character to validate it.
+
+IV. once the cipher is validated, i need to collect user input (plain text)
+    a. again, guessing I would need to convert string to chr
+    b. check each character's case and return enciphered value in the corresponding case
+    c. introduce logic to ignore numeric characters and leave them as is in the enciphered text. spaces too; not sure if i have to do anything at all to do that
+    d. printf resulting cipher
+    e. return 0
